@@ -1,0 +1,111 @@
+/* Main Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #22223b;
+    min-height: 100vh;
+}
+h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #22223b;
+    letter-spacing: 1px;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255,255,255,0.92);
+    border-radius: 20px;
+    box-shadow: 0 10px 32px 0 rgba(34,34,59,0.10);
+    padding: 2.2rem 2rem 2rem 2rem;
+}
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 10px rgba(58,134,255,0.08);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.navbar li {
+    margin: 0 0.4rem;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    background: rgba(255,255,255,0.04);
+}
+.navbar a:hover,
+.navbar a.active {
+    background: #ffbe0b;
+    color: #3a86ff;
+    font-weight: bold;
+}
+section {
+    margin-top: 2rem;
+}
+.tweet-section {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #edf6f9;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px rgba(131,56,236,0.05);
+}
+hr {
+    margin: 1.8rem 0;
+    border: none;
+    border-top: 2px solid #8338ec22;
+}
+
+/* Blockquotes (tweets) */
+blockquote.twitter-tweet {
+    margin: 1.2em auto;
+    padding: 1.1em 1.2em;
+    background: #f1f1fb;
+    border-left: 5px solid #3a86ff;
+    border-radius: 9px;
+    font-size: 1.08rem;
+    color: #212529;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(58,134,255,0.04);
+}
+blockquote.twitter-tweet a {
+    color: #8338ec;
+    word-break: break-all;
+}
+footer {
+    text-align: center;
+    padding: 1.4rem 0 0.7rem 0;
+    background: none;
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+    main {
+        padding: 1.1rem 0.7rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
